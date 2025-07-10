@@ -57,17 +57,15 @@ Untuk AI feedback (dengan model seperti deepseek/deepseek-r1-0528:free):
 
 📝 Cara Setup
 1. Clone Repo
-git clone https://github.com/username/quran-hafalan-app.git
-cd quran-hafalan-app
-1. Install Dependency
+2. Install Dependency
 npm install
-1. Buat File .env
+3. Buat File .env
 VITE_API_URL=https://openrouter.ai/api/v1/chat/completions
 VITE_API_KEY=sk-xxxxxx (isi key kamu)
 VITE_MODEL=deepseek/deepseek-r1-0528:free
-
-1. Jalankan App
+3. Jalankan App
 npm run dev
+
 🖼️ Tampilan UI
 UI ramah anak dengan warna ceria seperti:
 
@@ -80,10 +78,8 @@ UI ramah anak dengan warna ceria seperti:
 💚 #708A58 (Hijau Lembut)
 
 💡 Rencana Fitur Selanjutnya
-Menambahkan animasi mic saat merekam
 
 Menyimpan progres hafalan anak
-
-Tambahan mode latihan (tanpa audio)
+Memeberikan Reward ketika sudah anak sudah menghafal
 
 UI/UX untuk anak usia dini (besar teks dan icon)
