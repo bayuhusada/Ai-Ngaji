@@ -1,12 +1,102 @@
-# React + Vite
+📖 Hafalan Qur'an Interaktif
+Aplikasi web interaktif untuk membantu anak-anak belajar menghafal Al-Qur'an menggunakan fitur audio, speech recognition, dan AI feedback yang ramah anak.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web ini memberikan pengalaman belajar menyenangkan dengan:
 
-Currently, two official plugins are available:
+🎧 Pemutaran audio ayat
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎙️ Perekaman suara bacaan anak
 
-## Expanding the ESLint configuration
+✅ Pengecekan kemiripan bacaan
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🤖 Umpan balik motivatif dari AI
+
+✨ UI ramah anak dengan warna-warna ceria dan ikon menarik
+
+🚀 Fitur Utama
+Picker Surah & Ayat
+Pilih surah dan ayat yang ingin dipelajari langsung dari API Al-Qur'an.
+
+Pemutar Audio & Teks Ayat
+Anak dapat mendengarkan ayat dan membaca teks Arabnya.
+
+Rekaman Suara (Speech Recognition)
+Anak membaca ayat dengan mikrofon, lalu AI akan mengenali suaranya.
+
+Skor Kecocokan & Motivasi
+Sistem menghitung kesamaan bacaan anak dengan ayat asli dan memberi semangat sesuai hasilnya.
+
+Feedback AI (DeepSeek / Gemini)
+AI akan memberikan umpan balik singkat seperti guru ngaji yang ramah.
+
+🛠️ Teknologi yang Digunakan
+React.js + Vite
+
+Tailwind CSS v4
+
+Lucide React Icons
+
+Web Speech API (Speech Recognition)
+
+DeepSeek API (AI Feedback)
+
+Al-Qur'an Cloud API (Data ayat, audio, dan surah)
+
+🔗 Sumber API
+📚 Al-Qur'an Cloud API
+Menyediakan teks ayat, terjemahan, dan audio:
+🔗 https://alquran.cloud/api
+
+Contoh endpoint:
+https://api.alquran.cloud/v1/surah/{surah_number}
+https://api.alquran.cloud/v1/ayah/{surah_number}:{ayah_number}/ar.alafasy
+
+🤖 DeepSeek AI via OpenRouter
+Untuk AI feedback (dengan model seperti deepseek/deepseek-r1-0528:free):
+🔗 https://openrouter.ai
+
+📝 Cara Setup
+1. Clone Repo
+bash
+Copy
+Edit
+git clone https://github.com/username/quran-hafalan-app.git
+cd quran-hafalan-app
+2. Install Dependency
+bash
+Copy
+Edit
+npm install
+3. Buat File .env
+env
+Copy
+Edit
+VITE_API_URL=https://openrouter.ai/api/v1/chat/completions
+VITE_API_KEY=sk-xxxxxx (isi key kamu)
+VITE_MODEL=deepseek/deepseek-r1-0528:free
+Jangan lupa untuk menambahkan .env ke .gitignore.
+
+4. Jalankan App
+bash
+Copy
+Edit
+npm run dev
+🖼️ Tampilan UI
+UI ramah anak dengan warna ceria seperti:
+
+🟢 #2D4F2B (Hijau Tua)
+
+🟡 #FFB823 (Kuning Cerah)
+
+🧡 #FFF1CA (Kuning Muda)
+
+💚 #708A58 (Hijau Lembut)
+
+💡 Rencana Fitur Selanjutnya
+Menambahkan animasi mic saat merekam
+
+Menyimpan progres hafalan anak
+
+Tambahan mode latihan (tanpa audio)
+
+UI/UX untuk anak usia dini (besar teks dan icon)
