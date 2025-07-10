@@ -57,29 +57,16 @@ Untuk AI feedback (dengan model seperti deepseek/deepseek-r1-0528:free):
 
 📝 Cara Setup
 1. Clone Repo
-bash
-Copy
-Edit
 git clone https://github.com/username/quran-hafalan-app.git
 cd quran-hafalan-app
-2. Install Dependency
-bash
-Copy
-Edit
+1. Install Dependency
 npm install
-3. Buat File .env
-env
-Copy
-Edit
+1. Buat File .env
 VITE_API_URL=https://openrouter.ai/api/v1/chat/completions
 VITE_API_KEY=sk-xxxxxx (isi key kamu)
 VITE_MODEL=deepseek/deepseek-r1-0528:free
-Jangan lupa untuk menambahkan .env ke .gitignore.
 
-4. Jalankan App
-bash
-Copy
-Edit
+1. Jalankan App
 npm run dev
 🖼️ Tampilan UI
 UI ramah anak dengan warna ceria seperti:
